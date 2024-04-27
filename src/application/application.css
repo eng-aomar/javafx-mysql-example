@@ -1,0 +1,15 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-pref-width: 117px;
+    -fx-pref-height: 26px;
+}
+
+.button {
+    -fx-pref-width: 78px;
+    -fx-pref-height: 26px;
+}

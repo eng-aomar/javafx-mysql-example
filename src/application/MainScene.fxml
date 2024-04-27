@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox layoutX="24.0" layoutY="39.0" prefHeight="133.0" prefWidth="51.0" spacing="15.0">
+         <children>
+            <Label text="sid">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="sname">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="age">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="rating">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="67.0" layoutY="37.0" prefHeight="158.0" prefWidth="126.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txt_sid" prefHeight="26.0" prefWidth="117.0" />
+            <TextField fx:id="txt_sname" />
+            <TextField fx:id="txt_age" layoutX="10.0" layoutY="36.0" />
+            <TextField fx:id="txt_rating" layoutX="10.0" layoutY="61.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="tv_sailors" layoutX="223.0" layoutY="28.0" onMouseClicked="#handleRowSelection" prefHeight="352.0" prefWidth="491.0">
+        <columns>
+          <TableColumn fx:id="tv_id" prefWidth="48.79998779296875" text="sid" />
+          <TableColumn fx:id="tv_sname" prefWidth="189.60003662109375" text="sname" />
+            <TableColumn fx:id="tv_age" prefWidth="135.199951171875" text="age" />
+            <TableColumn fx:id="tv_rating" prefWidth="117.5999755859375" text="rating" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_insert" layoutX="85.0" layoutY="195.0" mnemonicParsing="false" onAction="#insertRecord" prefHeight="26.0" prefWidth="78.0" text="insert" />
+      <Button fx:id="btn_update" layoutX="86.0" layoutY="238.0" mnemonicParsing="false" onAction="#updateRecord" prefHeight="26.0" prefWidth="78.0" text="update" />
+      <Button fx:id="btn_delete" layoutX="85.0" layoutY="279.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="26.0" prefWidth="78.0" text="delete" />
+   </children>
+</AnchorPane>
